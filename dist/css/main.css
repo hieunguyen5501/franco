@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 html {
   font-size: 62.5%; }
 
@@ -288,12 +289,69 @@ button {
   margin-top: 30px;
   display: grid;
   grid-template-columns: 2fr 1fr;
-  grid-gap: 20px; }
+  grid-gap: 30px; }
   .list-ads .ads-left {
     position: relative; }
     .list-ads .ads-left img {
       width: 100%; }
     .list-ads .ads-left div {
       position: absolute;
-      top: 51%;
-      left: 61%; }
+      top: 52%;
+      left: 50%; }
+      .list-ads .ads-left div span {
+        font-family: Pacifico;
+        font-size: 25px;
+        font-weight: bold;
+        display: block;
+        margin-bottom: 10px; }
+      .list-ads .ads-left div .shop-now {
+        float: right; }
+  .list-ads .ads-right img {
+    width: 100%; }
+  .list-ads .ads-right .ads-right__top {
+    margin-bottom: 10px;
+    position: relative; }
+    .list-ads .ads-right .ads-right__top div {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      padding: 35px; }
+      .list-ads .ads-right .ads-right__top div > span {
+        display: block;
+        border: 1px solid #fff;
+        width: 100%;
+        height: 100%;
+        text-transform: uppercase; }
+        .list-ads .ads-right .ads-right__top div > span > p {
+          font-size: 20px;
+          font-weight: bold; }
+          .list-ads .ads-right .ads-right__top div > span > p > span {
+            font-weight: 300;
+            display: block; }
+  .list-ads .ads-right .ads-right__bottom {
+    position: relative; }
+    .list-ads .ads-right .ads-right__bottom img {
+      width: 100%; }
+    .list-ads .ads-right .ads-right__bottom div {
+      position: absolute;
+      top: 40%;
+      left: 10%; }
+      .list-ads .ads-right .ads-right__bottom div > span {
+        display: block;
+        width: 100%;
+        height: 100%;
+        text-transform: uppercase; }
+        .list-ads .ads-right .ads-right__bottom div > span > p {
+          font-size: 20px;
+          font-weight: bold; }
+          .list-ads .ads-right .ads-right__bottom div > span > p > span {
+            font-weight: 300;
+            display: block; }
+      .list-ads .ads-right .ads-right__bottom div .shop-now {
+        float: left; }
+
+.shop-now {
+  background-color: #8262b5;
+  color: #fff; }
