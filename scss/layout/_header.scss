@@ -35,10 +35,14 @@
 	.header__bottom {
 		border-bottom: 2px solid #dddddd;
 		.logo {
-        	letter-spacing: 8px;
-        	font-style: 20px;
+        	letter-spacing: 10px;
 			font-weight: bold;
-
+			font-size: 20px;
+			
+			a:hover {
+				text-decoration: none;
+				color: $primary-color;
+			}
 			span {
 				padding: 7px;
 				border: 2px solid #222222;
@@ -186,8 +190,9 @@
     		position: absolute;
     		top: 100%;
     		left: 0;
-    		padding: 10px 20px;
+    		padding: 10px 15px;
     		width: 100%;
+    		z-index: 1;
 
     		ul {
     			@include styleUL;
@@ -283,8 +288,10 @@
 	    		position: absolute;
 	    		top: 100%;
 	    		left: 0;
-	    		padding: 10px 20px;
+	    		padding: 10px 15px;
 	    		width: 100%;
+    			z-index: 1;
+
 
 	    		ul {
 	    			@include styleUL;
@@ -366,146 +373,15 @@
 				}
 			}
 		}
+
+		.header__bottom {
+			.nav-right {
+				ul {
+					li {
+						margin-left: 10px;
+					}
+				}
+			}
+		}
 	}
 };
-// @include mediaSm {
-// 	#header {
-// 	    .header__top {
-// 	        padding: 10px 20px;
-		
-// 	        div {
-// 	        	width: 100%;
-// 	        	ul {
-// 		        	@include styleUL;
-// 		        	display: flex;
-// 		        	justify-content: center;
-
-// 		        	li {
-// 		        		text-align: center;
-
-// 		        		a {
-// 		        			color: #525252;
-// 		        			font-weight: 900;
-// 		        			margin-right: 10px;
-// 		        			&:hover {
-// 		        				text-decoration: none;
-// 		        			}
-							
-// 		        			i {
-// 		        				margin-right: 5px;
-// 		        			}
-// 		        		}
-// 		        	}
-// 		        }
-// 	        }
-// 	    }
-
-// 	    .header__bottom {
-// 	    	padding: 20px 20px;
-// 	    	display: flex;
-// 	        justify-content: space-between;
-// 			position: relative;
-
-// 	        .logo {
-	        	
-// 	        }
-
-// 	    	.nav-center {
-// 	    		// display: none;
-
-// 	    		position: absolute;
-// 	    		top: 100%;
-// 	    		left: 0;
-// 	    		padding: 10px 20px;
-// 	    		width: 100%;
-
-// 	    		ul {
-// 	    			@include styleUL;
-// 	    			background-color: #222222;
-// 	    			width: 100%;
-
-// 	    			li {
-// 	    				a {
-// 		        			color: #525252;
-// 		        			padding: 10px;
-// 		        			&:hover {
-// 		        				text-decoration: none;
-// 		        				color: #929292;
-// 		        			}
-							
-// 		        			i {
-// 		        				margin-right: 5px;
-// 		        			}
-// 		        		}
-// 	    			}
-
-// 	    		}
-
-// 	    		.search-dev {
-// 	    			display: none;
-// 	    		}
-// 	    	}
-
-// 	    	.nav-right {
-
-// 	    		ul {
-// 	    			@include styleUL;
-
-// 	    			li {
-// 	    				float: right;
-// 	    				margin-left: 20px;
-
-// 	    				a {
-// 		        			color: #525252;
-// 		        			font-weight: 900;
-// 		        			// padding: 10px;
-// 		        			&:hover {
-// 		        				text-decoration: none;
-// 		        				color: #929292;
-// 		        			}
-							
-// 		        			i {
-// 		        				margin-right: 5px;
-// 		        			}
-// 		        		}
-// 	    			}
-// 	    		}
-// 	    	}
-// 	    }
-// 	}
-// };
-
-// @include mediaMd {
-// 	#header { 
-// 		.header__top{
-// 	        width: 100%;
-// 	        background-color: #222222;
-// 	        display: flex;
-// 	        justify-content: space-between;
-// 	        padding: 10px 20px;
-		
-// 	        ul {
-// 	        	@include styleUL;
-
-// 	        	li {
-// 	        		float: left;
-	        		
-
-// 	        		a {
-// 	        			color: #525252;
-// 	        			font-weight: 900;
-// 	        			margin-right: 10px;
-// 	        			&:hover {
-// 	        				text-decoration: none;
-// 	        				color: #929292;
-// 	        			}
-						
-// 	        			i {
-// 	        				margin-right: 5px;
-// 	        			}
-// 	        		}
-// 	        	}
-// 	        }
-// 	    }
-// 	}
-// };
