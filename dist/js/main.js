@@ -29,4 +29,15 @@ $(document).ready(function() {
 		}
 		}]
   	});
+
+  	$('#open-menu').on('click', function () {
+  		$('.nav-center').addClass('open');
+  		$('.close-menu').css('display', 'block');
+  	});
+
+  	$('.close-menu').on('click', function () {
+  		$('.nav-center').removeClass('open');
+  		$('.close-menu').css('display', 'none');
+  	});
 });
+

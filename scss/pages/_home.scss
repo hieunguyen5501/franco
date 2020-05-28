@@ -19,8 +19,6 @@
 			top: 65%;
   			left: 64%;
   			transform: translate(-50%, -50%);
-			// display: flex;
-			// justify-content: flex-end;
 
 			span {
 				font-family: Pacifico;
@@ -186,9 +184,6 @@
 	}
 
 	.list-blog__content {
-		// display: grid;
-		// grid-template-columns: 1fr 1fr 1fr;
-		// grid-gap: 30px;
 
 		.blog {
 			padding: 15px;
@@ -233,7 +228,7 @@
 				.blog-title a {
 					font-size: 16px;
 					font-weight: 700;
-					color: #222222;
+					color: $black;
 
 					&:hover {
 						color: $primary-color;
@@ -284,13 +279,6 @@
 			}
 
 			div {
-				position: absolute;
-				top: 65%;
-	  			left: 64%;
-	  			transform: translate(-50%, -50%);
-				// display: flex;
-				// justify-content: flex-end;
-
 				span {
 					font-size: 24px;
 					margin-bottom: 10px;
@@ -381,12 +369,6 @@
 			}
 
 			div {
-				position: absolute;
-				top: 65%;
-	  			left: 64%;
-	  			transform: translate(-50%, -50%);
-				// display: flex;
-				// justify-content: flex-end;
 
 				span {
 					font-size: 15px;
@@ -426,12 +408,6 @@
 			}
 
 			div {
-				position: absolute;
-				top: 65%;
-	  			left: 64%;
-	  			transform: translate(-50%, -50%);
-				// display: flex;
-				// justify-content: flex-end;
 
 				span {
 					font-size: 10px;

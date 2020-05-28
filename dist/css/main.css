@@ -8,7 +8,8 @@ body {
   padding: 0;
   width: 100%;
   line-height: 1.3;
-  font-family: "Montserrat", sans-serif; }
+  font-family: "Montserrat", sans-serif;
+  background-color: #ffffff; }
 
 * {
   padding: 0;
@@ -81,6 +82,15 @@ button {
   padding-left: 0px; }
 
 /*------------------------ HEADER -------------------------- */
+.close-menu {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  display: none;
+  color: #fff; }
+
 #header .header__top {
   width: 100%;
   background-color: #222222;
@@ -98,7 +108,8 @@ button {
         margin-right: 10px; }
         #header .header__top ul li a:hover {
           text-decoration: none;
-          color: #929292; }
+          color: #929292;
+          transition: all 0.3s ease-out; }
         #header .header__top ul li a i {
           margin-right: 5px; }
 
@@ -110,7 +121,8 @@ button {
     font-size: 20px; }
     #header .header__bottom .logo a:hover {
       text-decoration: none;
-      color: #8262b5; }
+      color: #8262b5;
+      transition: all 0.3s ease-out; }
     #header .header__bottom .logo span {
       padding: 7px;
       border: 2px solid #222222;
@@ -119,6 +131,11 @@ button {
     font-family: "Montserrat script=all rev=1";
     font-weight: 900;
     font-style: normal; }
+    #header .header__bottom .nav-center a:hover, #header .header__bottom .nav-center a.active {
+      text-decoration: none;
+      color: #8262b5; }
+  #header .header__bottom .open-navbar-collapse {
+    cursor: pointer; }
 
 @media screen and (min-width: 1171px) {
   #header .header__bottom {
@@ -164,7 +181,8 @@ button {
         #header .header__bottom .nav-right ul li a {
           color: #525252;
           font-weight: 900;
-          margin-right: 10px; }
+          margin-right: 10px;
+          font-size: 18px; }
           #header .header__bottom .nav-right ul li a:hover {
             text-decoration: none;
             color: #8262b5; }
@@ -180,28 +198,34 @@ button {
     justify-content: space-between;
     position: relative; }
     .header__bottom .nav-center {
-      position: absolute;
-      top: 100%;
-      left: 0;
-      padding: 10px 15px;
+      height: 100%;
       width: 100%;
-      z-index: 1; }
+      display: none;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.7);
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+      text-align: center; }
       .header__bottom .nav-center ul {
         margin: 0;
         padding: 0;
         list-style: none;
-        background-color: #222222;
         width: 100%; }
         .header__bottom .nav-center ul li a {
-          color: #525252;
+          color: #fff;
           padding: 10px; }
-          .header__bottom .nav-center ul li a:hover {
-            text-decoration: none;
-            color: #929292; }
           .header__bottom .nav-center ul li a i {
             margin-right: 5px; }
       .header__bottom .nav-center .search-dev {
         display: none; }
+      .header__bottom .nav-center.open {
+        display: block;
+        animation-name: opacity;
+        animation-duration: .5s; }
     .header__bottom .nav-right ul {
       margin: 0;
       padding: 0;
@@ -235,26 +259,32 @@ button {
     justify-content: space-between;
     position: relative; }
     #header .header__bottom .nav-center {
-      position: absolute;
-      top: 100%;
-      left: 0;
-      padding: 10px 15px;
+      height: 100%;
       width: 100%;
-      z-index: 1; }
+      display: none;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.7);
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+      text-align: center; }
       #header .header__bottom .nav-center ul {
         margin: 0;
         padding: 0;
         list-style: none;
-        background-color: #222222;
         width: 100%; }
         #header .header__bottom .nav-center ul li a {
-          color: #525252;
+          color: #fff;
           padding: 10px; }
-          #header .header__bottom .nav-center ul li a:hover {
-            text-decoration: none;
-            color: #929292; }
           #header .header__bottom .nav-center ul li a i {
             margin-right: 5px; }
+      #header .header__bottom .nav-center.open {
+        display: block;
+        animation-name: opacity;
+        animation-duration: .5s; }
       #header .header__bottom .nav-center .search-dev {
         display: none; }
     #header .header__bottom .nav-right ul {
@@ -290,6 +320,12 @@ button {
       justify-content: center; }
   #header .header__bottom .nav-right ul li {
     margin-left: 10px; } }
+
+@keyframes opacity {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 
 /****************** FOOTER *****************/
 footer {
@@ -614,14 +650,9 @@ footer {
   .list-ads {
     grid-template-columns: 1fr;
     grid-gap: 30px; }
-    .list-ads .ads-left div {
-      position: absolute;
-      top: 65%;
-      left: 64%;
-      transform: translate(-50%, -50%); }
-      .list-ads .ads-left div span {
-        font-size: 24px;
-        margin-bottom: 10px; }
+    .list-ads .ads-left div span {
+      font-size: 24px;
+      margin-bottom: 10px; }
     .list-ads .ads-right {
       padding-left: 0px; }
       .list-ads .ads-right .ads-right__top {
@@ -663,14 +694,9 @@ footer {
 @media screen and (max-width: 768px) {
   .list-ads {
     grid-template-columns: 1fr; }
-    .list-ads .ads-left div {
-      position: absolute;
-      top: 65%;
-      left: 64%;
-      transform: translate(-50%, -50%); }
-      .list-ads .ads-left div span {
-        font-size: 15px;
-        margin-bottom: 10px; }
+    .list-ads .ads-left div span {
+      font-size: 15px;
+      margin-bottom: 10px; }
     .list-ads .ads-right {
       padding-left: 0px; }
       .list-ads .ads-right .ads-right__top div {
@@ -681,14 +707,9 @@ footer {
 @media screen and (max-width: 500px) {
   .list-ads {
     grid-template-columns: 1fr; }
-    .list-ads .ads-left div {
-      position: absolute;
-      top: 65%;
-      left: 64%;
-      transform: translate(-50%, -50%); }
-      .list-ads .ads-left div span {
-        font-size: 10px;
-        margin-bottom: 10px; }
+    .list-ads .ads-left div span {
+      font-size: 10px;
+      margin-bottom: 10px; }
     .list-ads .ads-right {
       padding-left: 0px; }
       .list-ads .ads-right .ads-right__top div {
