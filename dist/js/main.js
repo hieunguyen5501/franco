@@ -1,7 +1,8 @@
 $(document).ready(function() {
 	$('.list-blog__content').slick({
+		dots: true,
     	slidesToShow: 3,
-	  	slidesToScroll: 1,
+	  	slidesToScroll: 3,
 	  	autoplay: true,
 	  	autoplaySpeed: 2000,
 	  	prevArrow: false,
@@ -39,5 +40,7 @@ $(document).ready(function() {
   		$('.nav-center').removeClass('open');
   		$('.close-menu').css('display', 'none');
   	});
+
+  	$('.slick-dots li button').html('<span><i class="fa fa-circle" aria-hidden="true"></i></span>');
 });
 

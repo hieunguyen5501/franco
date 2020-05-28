@@ -2,27 +2,27 @@
 
 @mixin navCenterMobile {
 	height: 100%;
-  	width: 100%;
-  	display: none;
-  	position: fixed;
-  	z-index: 1;
-  	top: 0;
-  	left: 0;
-  	background-color: rgba(0,0,0,0.7);
-  	overflow-x: hidden;
-  	transition: 0.5s;
-  	padding-top: 60px;
-  	text-align:center;
+	width: 100%;
+	display: none;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: rgba(0,0,0,0.7);
+	overflow-x: hidden;
+	transition: 0.5s;
+	padding-top: 60px;
+	text-align:center;
 }
 
 .close-menu {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-  display: none;
-  color: #fff;
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+	display: none;
+	color: #fff;
 }
 
 #header {
@@ -31,37 +31,37 @@
 		background-color: $black;
 		padding: 10px 30px;
 		display: flex;
-	    justify-content: space-between;
+		justify-content: space-between;
 
 		ul {
-	    	@include styleUL;
+			@include styleUL;
 
-	    	li {
+			li {
 
-	    		float: left;
-	    		
-	    		a {
-	    			color: #525252;
-	    			margin-right: 10px;
-	    			&:hover {
-	    				text-decoration: none;
-	    				color: #929292;
-	    				@include easeOut;
-	    			}
+				float: left;
+				
+				a {
+					color: #525252;
+					margin-right: 10px;
+					&:hover {
+						text-decoration: none;
+						color: #929292;
+						@include easeOut;
+					}
 					
-	    			i {
-	    				margin-right: 5px;
-	    			}
-	    		}
-	    	}
-	    }
+					i {
+						margin-right: 5px;
+					}
+				}
+			}
+		}
 
 	}
 
 	.header__bottom {
 		border-bottom: 2px solid #dddddd;
 		.logo {
-        	letter-spacing: 10px;
+			letter-spacing: 10px;
 			font-weight: bold;
 			font-size: 20px;
 			
@@ -75,22 +75,22 @@
 				border: 2px solid $black;
 				color: $black;
 			}
-        }
+		}
 
-        .nav-center {
-        	a {
-        		font-family: "Montserrat script=all rev=1";
-			    font-weight: 900;
-			    font-style: normal;
+		.nav-center {
+			a {
+				font-family: "Montserrat script=all rev=1";
+				font-weight: 900;
+				font-style: normal;
 
-			    &:hover, &.active {
-				   	text-decoration: none;
-		        	color: $primary-color;
+				&:hover, &.active {
+					text-decoration: none;
+					color: $primary-color;
 				}
-        	}
-        }
+			}
+		}
 
-        .open-navbar-collapse {
+		.open-navbar-collapse {
 			cursor: pointer;
 		}
 	}
@@ -98,110 +98,110 @@
 
 @include mediaXl {
 	#header {
-	    
-	    .header__top {
-	        
 		
-	        ul {
-	
+		.header__top {
+			
+			
+			ul {
+				
 
-	        	li {
-	        		
-	        		
+				li {
+					
+					
 
-	        		a {
-	        			i {
-	        				
-	        			}
-	        			
-	        		}
+					a {
+						i {
+							
+						}
 						
-	        	}
-	        }
-	    }
+					}
+					
+				}
+			}
+		}
 
-	    .header__bottom {
-	    	.search-mobile {
-	    		display: none;
-	    	}
+		.header__bottom {
+			.search-mobile {
+				display: none;
+			}
 
 
 			padding: 20px 30px;
-	    	display: flex;
-	        justify-content: space-between;
+			display: flex;
+			justify-content: space-between;
 			position: relative;
 
-	        
+			
 
-	        .nav-center {
+			.nav-center {
 
-	        	ul {
-	        		@include styleUL;
-	        		display: flex;
-	        		flex-wrap: nowrap;
+				ul {
+					@include styleUL;
+					display: flex;
+					flex-wrap: nowrap;
 
-	        		li {
-	        			text-transform: uppercase;
-	        			a {
-		        			color: #525252;
-		        			font-weight: bold;
-		        			padding: 20px;
-		        			&:hover {
-		        				text-decoration: none;
-		        				color: $primary-color;
-		        			}
+					li {
+						text-transform: uppercase;
+						a {
+							color: #525252;
+							font-weight: bold;
+							padding: 20px;
+							&:hover {
+								text-decoration: none;
+								color: $primary-color;
+							}
 							
-		        			i {
-		        				margin-right: 5px;
-		        			}
-		        		}
+							i {
+								margin-right: 5px;
+							}
+						}
 
-	        		}
-	        	}
-	        }
-
-	        .nav-collapse {
-			    border-top: 0;
-			    box-shadow: none;
-			}
-			  .nav-collapse.collapse {
-			    display: block !important;
-			    height: auto !important;
-			    padding-bottom: 0;
-			    overflow: visible !important;
-			}
-			  .nav-collapse.in {
-			    overflow-y: visible;
+					}
+				}
 			}
 
-	        .nav-right {
-	        	ul {
-	        		@include styleUL;
-	        		
-	        		li {
-	        			float: right;
-	        			a {
-		        			color: #525252;
-		        			font-weight: 900;
-		        			margin-right: 10px;
-		        			font-size: 18px;
-		        			&:hover {
-		        				text-decoration: none;
-		        				color: $primary-color;
-		        			}
+			.nav-collapse {
+				border-top: 0;
+				box-shadow: none;
+			}
+			.nav-collapse.collapse {
+				display: block !important;
+				height: auto !important;
+				padding-bottom: 0;
+				overflow: visible !important;
+			}
+			.nav-collapse.in {
+				overflow-y: visible;
+			}
+
+			.nav-right {
+				ul {
+					@include styleUL;
+					
+					li {
+						float: right;
+						a {
+							color: #525252;
+							font-weight: 900;
+							margin-right: 10px;
+							font-size: 18px;
+							&:hover {
+								text-decoration: none;
+								color: $primary-color;
+							}
 							
-		        			i {
-		        				margin-right: 5px;
-		        			}
-		        		}
+							i {
+								margin-right: 5px;
+							}
+						}
 
-	        		}
+					}
 
-	        		.open-navbar-collapse {
-	        			display: none;
-	        		}
-	        	}
-		    }
+					.open-navbar-collapse {
+						display: none;
+					}
+				}
+			}
 		}
 	}
 };
@@ -212,70 +212,70 @@
 	}
 
 	.header__bottom {
-    	padding: 20px 20px;
-    	display: flex;
-        justify-content: space-between;
+		padding: 20px 20px;
+		display: flex;
+		justify-content: space-between;
 		position: relative;
 
-        .logo {
-        	
-        }
+		.logo {
+			
+		}
 
-    	.nav-center {
-    		@include navCenterMobile;
+		.nav-center {
+			@include navCenterMobile;
 
-    		ul {
-    			@include styleUL;
-    			width: 100%;
+			ul {
+				@include styleUL;
+				width: 100%;
 
-    			li {
-    				a {
-	        			color: $white;
-	        			padding: 10px;						
-	        			i {
-	        				margin-right: 5px;
-	        			}
-	        		}
-    			}
+				li {
+					a {
+						color: $white;
+						padding: 10px;						
+						i {
+							margin-right: 5px;
+						}
+					}
+				}
 
-    		}
+			}
 
-    		.search-dev {
-    			display: none;
-    		}
+			.search-dev {
+				display: none;
+			}
 
-    		&.open {
-    			display: block;
-    			animation-name: opacity;
-  				animation-duration: .5s; 
-    		}
-    	}
+			&.open {
+				display: block;
+				animation-name: opacity;
+				animation-duration: .5s; 
+			}
+		}
 
-    	.nav-right {
+		.nav-right {
 
-    		ul {
-    			@include styleUL;
+			ul {
+				@include styleUL;
 
-    			li {
-    				float: right;
-    				margin-left: 20px;
+				li {
+					float: right;
+					margin-left: 20px;
 
-    				a {
-	        			color: #525252;
-	        			font-weight: 900;
-	        			&:hover {
-	        				text-decoration: none;
-	        				color: #929292;
-	        			}
+					a {
+						color: #525252;
+						font-weight: 900;
+						&:hover {
+							text-decoration: none;
+							color: #929292;
+						}
 						
-	        			i {
-	        				margin-right: 5px;
-	        			}
-	        		}
-    			}
-    		}
-    	}
-    }
+						i {
+							margin-right: 5px;
+						}
+					}
+				}
+			}
+		}
+	}
 };
 
 @include mediaMd {
@@ -287,11 +287,11 @@
 				ul {
 					@include styleUL;
 					display: flex;
-		        	justify-content: flex-end;
+					justify-content: flex-end;
 
-		        	li {
-		
-		        	}
+					li {
+						
+					}
 				}
 			}
 			div:first-child {
@@ -303,68 +303,68 @@
 
 		.header__bottom {
 			padding: 20px 20px;
-	    	display: flex;
-	        justify-content: space-between;
+			display: flex;
+			justify-content: space-between;
 			position: relative;
 			
 			.logo {
-        	
-	        }
+				
+			}
 
-	    	.nav-center {
-    			@include navCenterMobile;
+			.nav-center {
+				@include navCenterMobile;
 
-	    		ul {
-	    			@include styleUL;
-	    			width: 100%;
+				ul {
+					@include styleUL;
+					width: 100%;
 
-	    			li {
-	    				a {
-		        			color: $white;
-		        			padding: 10px;							
-		        			i {
-		        				margin-right: 5px;
-		        			}
-		        		}
-	    			}
+					li {
+						a {
+							color: $white;
+							padding: 10px;							
+							i {
+								margin-right: 5px;
+							}
+						}
+					}
 
-	    		}
+				}
 
-	    		&.open {
-	    			display: block;
-	    			animation-name: opacity;
-  					animation-duration: .5s; 
-	    		}
+				&.open {
+					display: block;
+					animation-name: opacity;
+					animation-duration: .5s; 
+				}
 
-	    		.search-dev {
-	    			display: none;
-	    		}
-	    	}
+				.search-dev {
+					display: none;
+				}
+			}
 
-	    	.nav-right {
+			.nav-right {
 
-	    		ul {
-	    			@include styleUL;
+				ul {
+					@include styleUL;
 
-	    			li {
-	    				float: right;
-	    				margin-left: 20px;
+					li {
+						float: right;
+						margin-left: 20px;
 
-	    				a {
-		        			color: #525252;
-		        			font-weight: 900;
-		        			&:hover {
-		        				text-decoration: none;
-		        				color: #929292;
-		        			}
+						a {
+							color: #525252;
+							font-weight: 900;
+							&:hover {
+								text-decoration: none;
+								color: #929292;
+							}
 							
-		        			i {
-		        				margin-right: 5px;
-		        			}
-		        		}
-	    			}
-	    		}
-	    	}
+							i {
+								margin-right: 5px;
+							}
+						}
+					}
+				}
+			}
 
 		}
 	}
@@ -379,12 +379,12 @@
 
 				ul {
 					@include styleUL;
-		        	display: flex;
-		        	justify-content: center;
+					display: flex;
+					justify-content: center;
 
-		        	li {
-		        		text-align: center;
-		        	}
+					li {
+						text-align: center;
+					}
 				}
 			}
 			div:first-child {
@@ -408,6 +408,6 @@
 
 
 @keyframes opacity {
-  0%   {opacity: 0;}
-  100% {opacity: 1;}
+	0%   {opacity: 0;}
+	100% {opacity: 1;}
 }

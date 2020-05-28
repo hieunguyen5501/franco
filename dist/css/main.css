@@ -380,6 +380,8 @@ footer {
             font-size: 18px;
             color: #888888; }
           footer .footer-top .shop-location .shop-location-content ul li a {
+            line-height: 2;
+            margin-top: -8px;
             margin-left: 10px;
             color: #888888;
             display: inline-block;
@@ -636,15 +638,6 @@ footer {
       border-top: 2px solid #ededed; }
       .list-blog .list-blog__content .blog .blog-comment-like span {
         padding: 0 10px; }
-  .list-blog .list-blog__footer {
-    padding: 30px 0px 70px 0;
-    text-align: center; }
-    .list-blog .list-blog__footer span {
-      font-size: 10px;
-      color: #b4a7c8; }
-    .list-blog .list-blog__footer .circle-center {
-      font-size: 12px;
-      color: #8262b5; }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .list-ads {
@@ -718,3 +711,21 @@ footer {
           font-size: 12px; }
   .list-products__content {
     grid-template-columns: 1fr !important; } }
+
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0px 70px 0; }
+  .slick-dots li button {
+    border: 0;
+    background-color: rgba(0, 0, 0, 0);
+    outline: none;
+    padding: 3px; }
+    .slick-dots li button:focus {
+      outline: none; }
+    .slick-dots li button span {
+      font-size: 12px;
+      color: #b4a7c8; }
+  .slick-dots li.slick-active button span {
+    color: #8262b5;
+    font-size: 14px; }
