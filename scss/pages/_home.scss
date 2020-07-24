@@ -369,9 +369,9 @@
 
 			div {
 				
-				transform: translate(75%, -39%);
+				transform: translate(160%, -39%);
 				span {
-					font-size: 27px;
+					font-size: 18px;
 					margin-bottom: 10px;
 				}
 
@@ -408,7 +408,7 @@
 			}
 
 			div {
-				transform: translate(12%, -39%);
+				transform: translate(30%, -39%);
 				span {
 					width: 211px;
 					font-size: 16px;
@@ -426,8 +426,9 @@
 
 			.ads-right__top {
 				div {
-					> span {
-						p {
+					> p {
+						font-size: 16px;
+						span {
 							font-size: 12px;
 						}
 					}
@@ -471,6 +472,29 @@
 
 @media screen and (max-width: 768px) {
     .list-ads .ads-right .ads-right__top {
-    	margin-bottom: 20px;
+    	margin-bottom: 15px;
+    }
+
+    .list-ads .ads-right .ads-right__top div {
+    	transform: translate(47%, -30%);
+    }
+}
+
+
+@media screen and (max-width: 660px) {
+    .list-ads .ads-left div {
+    	transform: translate(115%, -39%);
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .list-ads .ads-left div {
+    	transform: translate(90%, -39%);
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .list-ads .ads-left div {
+    	transform: translate(17%, -39%);
     }
 }

@@ -156,8 +156,15 @@ footer {
 @include mediaLg {
 	footer {
 		.footer-top {
-			grid-template-columns: 1fr;
-			grid-gap: 30px;
+			grid-column-gap: 6%;
+			grid-row-gap: 30px;
+			.navigation {
+				width: 47%;
+			}
+
+			.shop-location {
+				width: 47%;
+			}
 		}
 	}
 };
@@ -165,8 +172,13 @@ footer {
 @include mediaMd {
 	footer {
 		.footer-top {
+			display: flex;
 			grid-template-columns: 1fr;
 			grid-gap: 30px;
+
+			.footer-top-item {
+				width: 100%;
+			}
 		}
 
 
@@ -199,6 +211,7 @@ footer {
 @include mediaSm {
 	footer {
 		.footer-top {
+			display: flex;
 			grid-template-columns: 1fr;
 			grid-gap: 30px;
 		}
@@ -207,19 +220,19 @@ footer {
 
 @include min-screen-m {
 	.about-us {
-		width: 261px;
+		max-width: 261px;
 		margin-right: 130px;
 	}
 
 	.navigation {
-		width: 360px;
-		margin-right: 129px;
+		max-width: 360px;
+		margin-right: 173px;
 	}
 	.shop-location {
-		width: 260px;
+		max-width: 260px;
 
 		.shop-location-content {
-			width: 228px;
+			max-width: 228px;
 		}
 	}
 };
