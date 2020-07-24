@@ -2,9 +2,10 @@ $primary-color: #8262b5;
 $bg-color: #ffffff;
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat');
+@import url('../dist/fonts/Montserrat/Montserrat-Bold.ttf');
 
 
-$font-family-sans-serif: 'Montserrat', sans-serif;
+$font-family-sans-serif: 'Montserrat-Regular', sans-serif;
 $font-size-base: 0.9rem;
 $line-height-base: 1.6;
 

@@ -1,11 +1,9 @@
 /****************************** HOME *************************************/
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-
 .list-ads {
 	margin-top: 30px;
 	display: grid;
 	grid-template-columns: 2fr 1fr;
-	grid-gap: 20px;
+	grid-gap: 13px;
 
 	.ads-left {
 		position: relative;
@@ -16,56 +14,54 @@
 
 		div {
 			position: absolute;
-			top: 65%;
-  			left: 64%;
-  			transform: translate(-50%, -50%);
+			top: 63%;
+  			transform: translate(106%, -39%);
 
 			span {
-				font-family: Pacifico;
-				font-size: 25px;
+				font-family: Pacifico-Regular;
+				font-size: 27px;
+				letter-spacing: 1.4px;
 				font-weight: bold;
 				display: block;
-				margin-bottom: 10px;
 			}
 
 			.shop-now {
 				float: right;
+				padding: 10px 17px;
+				margin-top: 13px;
 			}
 		}
 	}
 
 	.ads-right {
-		padding-left: 10px;
+		padding-left: 17px;
 		img {
 			width: 100%;
 		}
 
 		.ads-right__top {
-			margin-bottom: 21px;
+			margin-bottom: 30px;
 			position: relative;
 			div {
 				position: absolute;
-				width: 100%;
-				height: 100%;
-				top: 0;
-				left: 0;
-				padding: 35px;
+			    top: 50%;
+			    text-transform: uppercase;
+			    display: flex;
+			    align-items: center;
+			    transform: translate(29%, -30%);
 
-				> span {
-					border: 1px solid #fff;
-					width: 100%;
-					height: 100%;
-					text-transform: uppercase;
-					display: flex;
-    				align-items: center;
-					> p {
-						margin-left: 20px;
-						font-size: 20px;
-						font-weight: bold;
-						> span {
-							font-weight: 300;
-							display: block;
-						}
+				> p {
+					font-size: 20px;
+					font-weight: bold;
+					font-family: Montserrat-Bold;
+					color: #000000;
+					> span {
+						font-size: 16px;
+						letter-spacing: 3px;
+						color: #616161;
+						font-weight: 600;
+						font-family: Montserrat-Regular, "Montserrat";
+						display: block;
 					}
 				}
 			}
@@ -82,29 +78,33 @@
 				width: 100%;
 			}
 
-			div {
+			> div {
 				position: absolute;
 				top: 50%;
-	  			left: 30%;
-	  			transform: translate(-50%, -50%);
-				> span {
-					display: block;
-					width: 100%;
-					height: 100%;
+	  			transform: translate(32%, -45%);
+				display: block;
+				
+				> p {
+					font-size: 20px;
+					font-weight: bold;
+					font-family: Montserrat-Bold;
+					color: #000000;
+					margin-bottom: 13px;
 					text-transform: uppercase;
-					> p {
-						font-size: 20px;
-						font-weight: bold;
-						> span {
-							font-weight: 300;
-							display: block;
-						}
+					> span {
+						font-size: 16px;
+						letter-spacing: 3px;
+						color: #616161;
+						font-weight: 600;
+						font-family: Montserrat-Regular, "Montserrat";
+						display: block;
 					}
-				}
+				}	
+			}
 
-				.shop-now {
-					float: left;
-				}
+			.shop-now {
+				float: left;
+				padding: 10px 19px;
 			}
 		}
 	}
@@ -113,26 +113,30 @@
 .shop-now {
 	background-color: $primary-color;
 	color: #fff;
+	font-family: Montserrat-Regular;
 }
 
 /*List Product*/
 .list-products {
-	margin-top: 70px;
+	margin-top: 75px;
 
 	.list-products__title {
-		margin-bottom: 50px;
+		margin-bottom: 47px;
 		.title-web--small {
 			font-size: 14px;
 			color: $primary-color;
 			font-weight: bold;
-			letter-spacing: 5px;
+			letter-spacing: 4px;
+			font-family: Montserrat-Bold;
 		}
 
 		h3 {
-			font-family: "Montserrat script=all rev=1";
+			font-family: Montserrat-Bold;
 		    font-weight: 500;
 		    font-style: normal; 
-		    letter-spacing: 5px;
+		    letter-spacing: 2px;
+		    margin-top: 12px;
+		    word-spacing: 3px;
 		}
 
 		.line {
@@ -146,7 +150,7 @@
 	.list-products__content {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr 1fr;
-		grid-gap: 30px;
+		grid-gap: 32px;
 	}
 }
 
@@ -154,25 +158,27 @@
 .list-blog {
 	background-size: cover;
     background-position: center;
-    margin-top: 70px;
+    margin-top: 69px;
     background-repeat: no-repeat;
     background-image: url(../../dist/img/bg-blog.jpg);
 
 	.list-blog__title {
 		text-align: center;
-		padding: 70px 0px 50px 0px;
+		padding: 75px 0px 45px 0px;
 		.title-web--small {
 			font-size: 14px;
 			color: $primary-color;
 			font-weight: bold;
-			letter-spacing: 5px;
+			letter-spacing: 3px;
 		}
 
 		h3 {
-			font-family: "Montserrat script=all rev=1";
+			font-family: Montserrat-Bold;
 		    font-weight: 500;
-		    font-style: normal; 
-		    letter-spacing: 5px;
+		    font-style: normal;
+		    letter-spacing: 2px;
+		    margin-top: 10px;
+		    margin-bottom: 13px;
 		}
 
 		.line {
@@ -186,7 +192,7 @@
 	.list-blog__content {
 
 		.blog {
-			padding: 15px;
+			padding: 0 15px;
 			border: 0px;
 
 			&:focus {
@@ -202,13 +208,13 @@
 				.date-create {
 					position: absolute;
 					left: 20px;
-					top: 20px;
+					top: 22px;
 					background-color: #a1d1dd;
 					color: #fff;
 					padding: 5px;
 
 					> span {
-						padding: 10px 15px;
+						padding: 5px 12px;
 						border: 1px solid #fff;
 						display: inline-block;
 
@@ -222,7 +228,7 @@
 			}
 
 			.blog-content {
-				padding: 20px;
+				padding: 17px 20px 8px 20px;
 				background-color: #fff;
 
 				.blog-title a {
@@ -235,15 +241,22 @@
 						text-decoration: none;
 					}
 				}
+
+				.blog-desc {
+					font-family: Open Sans;
+					font-size: 15px;
+					margin-top: 17px;
+					line-height: 21px;
+				}
 			}
 
 			.blog-comment-like {
-				padding: 10px;
+				padding: 17px 12px;
 				background-color: #fff;
 				border-top: 2px solid #ededed;
 
 				span {
-					padding: 0 10px;
+					padding: 6px 21px 10px 10px;
 				}
 			}
 		}
@@ -266,7 +279,7 @@
 
 			div {
 				span {
-					font-size: 24px;
+					font-size: 27px;
 					margin-bottom: 10px;
 				}
 
@@ -310,15 +323,15 @@
 					width: 100%;
 				}
 
-				div {
+				> div {
 					position: absolute;
 					top: 50%;
 		  			left: 30%;
 		  			transform: translate(-50%, -50%);
-					> span {
+					> div {
 						display: block;
 						width: 100%;
-						height: 100%;
+						// height: 100%;
 						text-transform: uppercase;
 						> p {
 							font-size: 20px;
@@ -355,9 +368,10 @@
 			}
 
 			div {
-
+				
+				transform: translate(75%, -39%);
 				span {
-					font-size: 15px;
+					font-size: 27px;
 					margin-bottom: 10px;
 				}
 
@@ -372,7 +386,7 @@
 
 			.ads-right__top {
 				div {
-					padding: 50px;
+					// padding: 50px;
 				}
 			}
 		}
@@ -394,9 +408,10 @@
 			}
 
 			div {
-
+				transform: translate(12%, -39%);
 				span {
-					font-size: 10px;
+					width: 211px;
+					font-size: 16px;
 					margin-bottom: 10px;
 				}
 
@@ -411,8 +426,6 @@
 
 			.ads-right__top {
 				div {
-					padding: 30px;
-
 					> span {
 						p {
 							font-size: 12px;
@@ -431,13 +444,13 @@
 .slick-dots {
 	display: flex;
 	justify-content: center;
-	padding: 30px 0px 70px 0;
+	padding: 29px 0px 66px 0;
 
 	li button {
 		border: 0;
 	    background-color: rgba(0,0,0,0);
 	    outline: none;
-		padding: 3px;
+		padding: 0px 6px;
 
 	    &:focus {
 		    outline: none;
@@ -453,4 +466,11 @@
 		color: $primary-color;
 		font-size: 14px;
 	}
+}
+
+
+@media screen and (max-width: 768px) {
+    .list-ads .ads-right .ads-right__top {
+    	margin-bottom: 20px;
+    }
 }

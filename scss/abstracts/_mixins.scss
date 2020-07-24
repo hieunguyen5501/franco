@@ -32,3 +32,9 @@
   padding: 0;
   list-style: none;
 }
+
+@mixin min-screen-m {
+  @media screen and (min-width: 769px) {
+    @content;
+  }
+}

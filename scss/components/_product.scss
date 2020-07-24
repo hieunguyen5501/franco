@@ -3,6 +3,7 @@
 .product {
 	.product-thum {
 		position: relative;
+		margin-bottom: 16px;
 
 		img {
 			width: 100%
@@ -10,10 +11,14 @@
 
 		.add-to-cart {
 			position: absolute;
-			left: 10px;
-			bottom: 10px;
-			background-color: #fff;
-			color: #222222;
+    		left: 6px;
+		    bottom: 3px;
+		    background-color: #fff;
+		    color: #222222;
+		    font-family: Montserrat-Regular;
+		    font-size: 13px;
+		    padding: 10px 12px 11px 16px;
+		    word-spacing: -2px;				
 
 			&:hover {
 				color: $primary-color;
@@ -22,8 +27,18 @@
 	}
 
 	.product-name {
-		margin-top: 20px;
+		margin-top: 17px;
 		font-weight: 700;
+		color: #000000;
+		margin-bottom: 8px;
+	}
+
+	.number-star {
+		margin-bottom: 6px;
+	}
+
+	.price {
+		margin-bottom: 15px;
 	}
 
 	.product-price {

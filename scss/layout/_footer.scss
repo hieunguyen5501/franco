@@ -4,32 +4,35 @@ footer {
 	background-color: $black;
 	padding-top: 60px;
 	.footer-top {
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
-		grid-gap: 130px;
-		padding-bottom: 30px;
+		display: flex;
+		flex-wrap: wrap;
 		.footer-top-item {
 
 			.footer-top-item-title {
 				color: #ededed;
 				font-weight: bold;
 				display: block;
-				padding-bottom: 30px;
+				padding-bottom: 28px;
 				border-bottom: 1px solid #393939;
+				letter-spacing: 2px;
 			}
 		}
 
 		.about-us {
+
 			p {
-				margin-top: 30px;
-				color: #888888;
+				font-family: Open Sans;
+			    margin-top: 22px;
+			    color: #888888;
+			    line-height: 22px;
+			    letter-spacing: 0.3px;
 			}
 
 			.social-icons {
 				display: flex;
 				justify-content: flex-start;
 				@include styleUL;
-				margin-top: 53px;
+				margin-top: 42px;
 
 				li {
 					a {
@@ -42,18 +45,24 @@ footer {
 		}
 
 		.navigation {
+	
 			.navigation-content {
-				margin-top: 30px;
-				display: grid;
-				grid-template-columns: 1fr 1fr;
-				grid-gap: 30px;
+				margin-top: 25px;
+				display: flex;
+				flex-wrap: wrap;
+
+				.navigation-item-right {
+					margin-right: 125px;
+				}
 
 				ul {
+
 					li {
 						a {
+							font-family: Open Sans;
 							color: #888888;
 							display: inline-block;
-							padding-bottom: 10px;
+							padding-bottom: 12px;
 
 
 							&:hover {
@@ -76,16 +85,17 @@ footer {
 						display: flex;
 						justify-content: flex-start;
 						i {
-							font-size: 18px;
+							font-size: 14px;
 							color: #888888;
 							}
 						a {
-							line-height: 2;
-    						margin-top: -8px;
-							margin-left: 10px;
-							color: #888888;
-							display: inline-block;
-							padding-bottom: 10px;
+							font-family: Open Sans;
+						    line-height: 34px;
+						    margin-top: -11px;
+						    margin-left: 15px;
+						    color: #888888;
+						    display: inline-block;
+						    padding-bottom: 10px;
 							
 
 							&:hover {
@@ -100,21 +110,31 @@ footer {
 
 	.footer-copyright-cc {
 		border-top: 2px solid #393939;
+		margin-top: 34px;
 	}
 
 	.footer__bottom {
 		display: flex;
 		justify-content: space-between;
 		color: #888888;
-		padding: 10px 0px 5px 0px;
+		padding: 24px 0px 24px 0px;
 		
+		span {
+			font-family: Open Sans;
+			letter-spacing: 0.3px;
 
+			span {
+				color: #ffffff;			
+			}
+		}
 
 		div {
 
 			.fa-heart {
 				color: $red;
 			}
+
+
 			ul {
 				@include styleUL;
 				display: flex;
@@ -123,8 +143,8 @@ footer {
 				li {
 					i {
 						display: inline-block;
-						font-size: 25px;
-						padding-left: 10px;
+						font-size: 19px;
+						padding-left: 7px;
 					}
 				}
 			}
@@ -181,6 +201,25 @@ footer {
 		.footer-top {
 			grid-template-columns: 1fr;
 			grid-gap: 30px;
+		}
+	}
+};
+
+@include min-screen-m {
+	.about-us {
+		width: 261px;
+		margin-right: 130px;
+	}
+
+	.navigation {
+		width: 360px;
+		margin-right: 129px;
+	}
+	.shop-location {
+		width: 260px;
+
+		.shop-location-content {
+			width: 228px;
 		}
 	}
 };

@@ -42,5 +42,9 @@ $(document).ready(function() {
   	});
 
   	$('.slick-dots li button').html('<span><i class="fa fa-circle" aria-hidden="true"></i></span>');
+
+  	$(window).resize(function(){
+	 	$('.slick-dots li button').html('<span><i class="fa fa-circle" aria-hidden="true"></i></span>');
+	});
 });
 
